@@ -123,6 +123,7 @@ nav .logo img{
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 40px;
+    text-align: justify;
 }
 .artic{
     width: 29%;

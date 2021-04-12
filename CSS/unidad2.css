@@ -94,6 +94,7 @@ nav .logo img{
     margin-top: 40px;
     flex-wrap: wrap;
     justify-content: space-around;
+    text-align: justify;
 }
 .artic{
     width: 29%;
