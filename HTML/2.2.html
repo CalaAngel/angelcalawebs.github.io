@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Comunicacion TCP/IP</title>
+    <link rel="stylesheet" href="../CSS/2.1.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel = "icon" href = "../IMAGENES/LOGO KENGEL STUDIOS.png" type = "image / icon type">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <section class="cont1 nav">
+                <div class="logo">
+                    <img src="../IMAGENES/LOGO KENGEL STUDIOS.png" alt="1">
+                </div>
+                <div class="enlaces-header">
+                    <a href="../index.html">INICIO</a>
+                    <a href="unidad2.html">REDES</a>
+                    <a href="../Página-próximamente/mantenimiento.html">DESARROLLO WEB</a>
+                    <a href="../Página-próximamente/mantenimiento.html">OTROS</a>
+                    <a href="#end">ACERCA DE</a>
+                </div>
+                <div class="barras">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </section>
+        </nav>
+    </header>
+    <section class="webs">
+        <div class="cont">
+            <h2 class="Titulo">2.2 MODELO DE COMUNICACIÓN TCP/IP</h2>
+            <article class="cont-artic" data-aos="zoom-in-left">
+                <div class="artic">
+                    <h2><strong>Qué es TCP/IP</strong></h2>
+                    <p>
+                        La definición de TCP/IP es la identificación del grupo de protocolos de red que hacen posible la transferencia de datos en redes, entre equipos informáticos e internet. Las siglas TCP/IP hacen referencia a este grupo de protocolos:
+                    </p><br>
+                    <ul>
+                        <li>
+                            <strong>TCP</strong> es el Protocolo de Control de Transmisión que permite establecer una conexión y el intercambio de datos entre dos anfitriones. Este protocolo proporciona un transporte fiable de datos.
+                        </li>
+                        <li>
+                            <strong>IP</strong> o protocolo de internet, utiliza direcciones series de cuatro octetos con formato de punto decimal (como por ejemplo 75.4.160.25). Este protocolo lleva los datos a otras máquinas de la red.
+                        </li>
+                    </ul><br>
+                    <p>
+                        El modelo TCP/IP permite un intercambio de datos fiable dentro de una red, definiendo los pasos a seguir desde que se envían los datos (en paquetes) hasta que son recibidos. Para lograrlo utiliza un sistema de capas con jerarquías (se construye una capa a continuación de la anterior) que se comunican únicamente con su capa superior (a la que envía resultados) y su capa inferior (a la que solicita servicios).
+                    </p><br><br>
+                    <img src="../IMAGENES/protocolo-TCP-IP-04.png" alt="protocolo tcp/ip">
+                </div>
+            </article>
+            <article class="cont-artic" data-aos="zoom-in-left">
+                <div class="artic">
+                    <h2><strong>Capas del modelo TCP/IP</strong></h2><br>
+                    <p>Dentro del modelo TCP/IP existen cuatro niveles o capas que hay que tener en cuenta.</p><br>
+                    <p>
+                        <strong>Nivel de enlace o acceso a la red</strong>: es la primera capa del modelo y ofrece la posibilidad de acceso físico a la red (que bien puede ser en anillo, ethernet, etc.), especificando el modo en que los datos deben enrutarse independientemente del tipo de red utilizado.
+                    </p><br>
+                    <p>
+                        <strong>Nivel de red o Internet</strong>: proporciona el paquete de datos o datagramas y administra las direcciones IP. (Los datagramas son paquetes de datos que constituyen el mínimo de información en una red). Esta capa es considerada la más simportante y engloba protocolos como IP,ARP, ICMP, IGMP y RARP.
+                    </p><br>
+                    <p>
+                        <strong>Nivel de Transporte</strong>: permiten conocer el estado de la transmisión así como los datos de enrutamiento y utilizan los puertos para asociar un tipo de aplicación con un tipo de dato.
+                    </p><br>
+                    <p>
+                        <strong>Nivel de Aplicación</strong>: es la parte superior del protocolo TCP/IP y suministra las aplicaciones de red tip Telnet, FTP o SMTP, que se comunican con las capas anteriores (con protocolos TCP o UDP).
+                    </p><br>
+                    <p>
+                        La capas del modelo TCP/IP coinciden con algunas capas del modelo teórico OSI, aunque tienen tareas mucha más diversas.
+                    </p>
+                    <p>
+                        La importancia del protocolo TCP/IP es muy elevada ya que permite que los datos enviados lleguen a su destino sin errores y bajo la misma forma en la que fueron enviados.
+                    </p>
+                </div>
+            </article>
+            <article class="cont-artic" data-aos="zoom-in-left">
+                <div class="artic">
+                    <h2><strong>Ventajas del modelo TCP/IP</strong></h2><br>
+                    <ul>
+                        <li>
+                            TCP/IP ofrece ventajas significativas respecto a otros protocolos de red. Una de esas ventajas es que es capaz de trabajar sobre una extensa gama de hardware y soporta muchos sistemas operativos (es multiplataforma). Internet está repleto de pequeñas redes con sus propios protocolos por lo que el uso de TCP/IP se ha estandarizado y es posible utilizarlo como protocolo de comunicación entre redes privadas intranet y extranet, facilitando una red más homogénea.
+                        </li><br>
+                        <li>
+                            TCP/IP es adecuado tanto para grandes y medianas redes como para redes empresariales o domésticas.
+                        </li><br>
+                        <li>
+                            TCP/IP está diseñado para enrutar y además presenta gran compatibilidad con las herramientas estándar para analizar y monitorizar el funcionamiento de una red.
+                        </li><br>
+                        <li>
+                            Es el protocolo estándar que se utiliza a nivel mundial para conectarse a internet y a los servidores web.
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <article class="cont-artic" data-aos="zoom-in-left">
+                <div class="artic">
+                    <h2><strong>Desventajas del modelo TCP/IP</strong></h2><br>
+                    <ul>
+                        <li>
+                            No distingue bien entre interfaces, protocolos y servicios lo cual afecta al desarrollo de nuevas tecnologías basadas en TCP/IP-
+
+                        </li><br>
+                        <li>
+                            En redes con bajo volumen de tráfico puede llegar a ser más lento (en redes con mayor volumen de tráfico, que necesiten gran cantidad de enrutamiento, puede ser mucho más rápido).
+                        </li><br>
+                        <li>
+                            Cuando se utiliza en servidores de ficheros o servidores de impresión no ofrecen un gran rendimiento.
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </section>
+    <footer id="end">
+        <div class="part-footer">
+            <img src="../IMAGENES/LOGO KENGEL STUDIOS.png" alt="1">
+        </div>
+        <div class="part-footer">
+            <h4>About Me</h4>
+            <a href="#end">Angel Pineda Cala</a>
+        </div>
+        <div class="part-footer">
+            <h4>Escuela</h4>
+            <a href="https://www.cuautla.tecnm.mx/">TECNM/CUAUTLA</a>
+            <a href="#end">6TO SEMESTRE</a>
+            <a href="https://www.cuautla.tecnm.mx/sistemas">SISTEMAS COMPUTACIONALES</a>
+        </div>
+        <div class="part-footer">
+            <h4>Redes Sociales</h4>
+            <div class="social-media">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-whatsapp"></i>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/3fb9d5cad9.js" crossorigin="anonymous"></script>
+    <script src="../JS/main.js"></script>
+</body>
+</html>

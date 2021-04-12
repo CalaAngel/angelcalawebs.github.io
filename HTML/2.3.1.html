@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Comunicación OSI</title>
+    <link rel="stylesheet" href="../CSS/2.1.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel = "icon" href = "../IMAGENES/LOGO KENGEL STUDIOS.png" type = "image / icon type">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <section class="cont1 nav">
+                <div class="logo">
+                    <img src="../IMAGENES/LOGO KENGEL STUDIOS.png" alt="1">
+                </div>
+                <div class="enlaces-header">
+                    <a href="../index.html">INICIO</a>
+                    <a href="unidad2.html">REDES</a>
+                    <a href="../Página-próximamente/mantenimiento.html">DESARROLLO WEB</a>
+                    <a href="../Página-próximamente/mantenimiento.html">OTROS</a>
+                    <a href="#end">ACERCA DE</a>
+                </div>
+                <div class="barras">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </section>
+        </nav>
+    </header>
+    <section class="webs">
+        <div class="cont">
+            <h2 class="Titulo">2.3.1 ESTÁNDARES IEEE 802 PARA REDES ALÁMBRICAS</h2>
+            <article class="cont-artic" data-aos="zoom-in-right">
+                <div class="artic">
+                    <h2><strong>IEEE 802.3</strong></h2>
+                    <p>
+                        Este estándar para redes basadas en cable se originó a finales de los años setenta y es mundialmente conocido como el estándar Ethernet. Inicialmente definió redes a velocidad de 10Mbps (Megabits por segundo) sobre cable de tipo coaxial o también de par trenzado. La mayoría de las redes de área local operan bajo este estándar o uno derivado del original Ethernet, actualmente Fast Ethernet (100Mbps) o Gigabit Ethernet (1000Mbps). Actualmente IEEE está trabajando (y casi terminando) el nuevo estándar de 10Gbps (Gigabits por segundo).
+                    </p><br><br>
+                    <img src="../IMAGENES/beispiel-ethernet.png" alt="estandares inalambricos">
+                </div>
+            </article>
+            <article class="cont-artic" data-aos="zoom-in-right">
+                <div class="artic">
+                    <h2><strong>Estándar IEEE 802.3 (Ethernet)</strong></h2>
+                    <p>
+                        La norma IEEE 802.3 define un modelo de red de área local utilizando el protocolo de acceso al medio CSMA/CD con persistencia de 1, es decir, las estaciones están permanentemente a la escucha del canal y cuando lo encuentran libre de señal efectúan sus transmisiones inmediatamente. Esto puede llevar a una colisión que hará que las estaciones suspendan sus transmisiones, esperen un tiempo aleatorio y vuelvan a intentarlo.
+                    </p><br>
+                    <p>
+                        En el nivel físico, las redes IEEE 802.3 utilizan codificación Manchester diferencial, que representa cada bit, no como un estado alto o bajo, sino como la transición bajo/alto o alto/bajo, dependiendo del valor del bit. Esto tiene la ventaja de que sea cual sea la secuencia binaria a transmitir, las corrientes eléctricas son iguales en un sentido o en el otro, es decir, el valor medio de la señal en cada bit es cero (físicamente, se dice que la componente de continua se anula), lo que tiene ventajas eléctricas.
+                    </p>
+                </div>
+            </article>
+            
+        </div>
+    </section>
+    <footer id="end">
+        <div class="part-footer">
+            <img src="../IMAGENES/LOGO KENGEL STUDIOS.png" alt="1">
+        </div>
+        <div class="part-footer">
+            <h4>About Me</h4>
+            <a href="#end">Angel Pineda Cala</a>
+        </div>
+        <div class="part-footer">
+            <h4>Escuela</h4>
+            <a href="https://www.cuautla.tecnm.mx/">TECNM/CUAUTLA</a>
+            <a href="#end">6TO SEMESTRE</a>
+            <a href="https://www.cuautla.tecnm.mx/sistemas">SISTEMAS COMPUTACIONALES</a>
+        </div>
+        <div class="part-footer">
+            <h4>Redes Sociales</h4>
+            <div class="social-media">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-whatsapp"></i>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/3fb9d5cad9.js" crossorigin="anonymous"></script>
+    <script src="../JS/main.js"></script>
+</body>
+</html>

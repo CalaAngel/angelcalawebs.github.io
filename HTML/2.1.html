@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Comunicación OSI</title>
+    <link rel="stylesheet" href="../CSS/2.1.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel = "icon" href = "../IMAGENES/LOGO KENGEL STUDIOS.png" type = "image / icon type">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <section class="cont1 nav">
+                <div class="logo">
+                    <img src="../IMAGENES/LOGO KENGEL STUDIOS.png" alt="1">
+                </div>
+                <div class="enlaces-header">
+                    <a href="../index.html">INICIO</a>
+                    <a href="unidad2.html">REDES</a>
+                    <a href="../Página-próximamente/mantenimiento.html">DESARROLLO WEB</a>
+                    <a href="../Página-próximamente/mantenimiento.html">OTROS</a>
+                    <a href="#end">ACERCA DE</a>
+                </div>
+                <div class="barras">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </section>
+        </nav>
+    </header>
+    <section class="webs">
+        <div class="cont">
+            <h2 class="Titulo">2.1 MODELO DE COMUNICACIÓN OSI</h2>
+            <article class="cont-artic" data-aos="zoom-in-right">
+                <div class="artic">
+                    <h2><strong>Modelo OSI, ¿qué es?</strong></h2>
+                    <p>El modelo OSI es el modelo de la interconexión de sistemas abiertos, y sus siglas provienen del inglés Model Open System Interconection. Este es un modelo de referencia para los protocolos de red, este estándar fue desarrollado en 1980 por una federación global de organizaciones que representan aproximadamente a 160 países.
+                    </p><br>
+                    <p>Esta normativa está formada por 7 capas que define las diferentes fases por las que deben pasar los datos para viajar entre dispositivos sobre una red de comunicaciones. En los cuales los usaremos tanto en la parte de sistemas como para la parte de redes.
+                    </p>
+                    <p>El modelo OSI no es la definición de un tecnología ni un modelo de red en sí mismo, lo que hace es definir la funcionalidad de ellos, para conseguir un estándar. Desde este modelo se han creado numerosos esquemas de protocolo de red.
+                    </p>
+                </div>
+            </article>
+            <article class="cont-artic" data-aos="zoom-in-right">
+                <div class="artic">
+                    <h2><strong>Capas del Modelo OSI</strong></h2>
+                    <p>
+                        · Aplicación<br>
+                        · Presentación<br>
+                        · Sesión<br>
+                        · Transporte<br>
+                        · Red<br>
+                        · Enlace<br>
+                        · Físico
+                    </p>
+                    <p>El Modelo OSI se representa de esta forma:</p><br><br>
+                    <img src="../IMAGENES/modelo_osi.png" alt="modelo osi">
+                </div>
+            </article>
+            <article class="cont-artic" data-aos="zoom-in-right">
+                <div class="artic">
+                    <h3><strong>Modelo de aplicación de la séptima capa</strong></h3>
+                    <p>Esta capa ofrece la posibilidad a las aplicaciones de que puedan acceder a las demás capas del modelo, y define los protocolos de intercambio de datos. En esta capa se encuentran aplicaciones de correos, gestores de base de datos o servidores de ficheros.</p>
+                    <p>Esta capa también permite que los usuarios puedan realizar acciones y ejecutar sus instrucciones, a través de una interfaz gráfica o una interfaz de línea de comandos.</p>
+                    <p>Un ejemplo que podemos tener para una capa de aplicación seria el protocolo SMTP, que es usada para emails.</p>
+                </div>
+            </article>
+            <article class="cont-artic" data-aos="zoom-in-right">
+                <div class="artic">
+                    <h3><strong>Modelo de la sexta capa o capa de presentación</strong></h3>
+                    <p>Esta capa es la que se encarga de ver y representar los datos para poder mostrarlos al usuario, en esta capa se analiza las representaciones que pueda tener tanto un ordenador, como otros dispositivos que puedan conectarse y así poder traducir el idioma del contenido, semántica y sintaxis de los datos transmitidos ya que pueden tener diferentes formas de manejarla. En esta capa también se permite que los datos sean cifrados y comprimidos.</p>
+                    <p>Esta sexta capa también se encarga de trabajar el contenido que el usuario o el técnico quiere ver.</p>
+                </div>
+            </article>
+            <article class="cont-artic" data-aos="zoom-in-right">
+                <div class="artic">
+                    <h3><strong>Modelo de la capa de sesión</strong></h3>
+                    <p>Esta capa se encarga de mantener y controlar el enlace que se establece entre dos ordenadores que están transmitiendo datos, y se ocupa de reanudar las comunicaciones en caso de haber alguna interrupción.</p>
+                    <p>Esta capa en la gran parte de casos es imprescindible o parcialmente imprescindible para el uso de servicios. También se ocupa del mapeo de las direcciones que transportara la información y trabajara con las capas inferiores, que podemos encontrar en el Modelo OSI.</p>
+                </div>
+            </article>
+            <article class="cont-artic" data-aos="zoom-in-right">
+                <div class="artic">
+                    <h3><strong>Modelo de la capa de transporte</strong></h3>
+                    <p>Esta capa es la que permite el transporte de los datos, entre las máquinas de origen y destino, ya que es independiente el tipo de red que se usa, para distribuir los datos, estos se encuentran dentro del paquete que se envía. Estos paquetes, dependiendo del segmento o diagrama, pueden corresponderse con los paquetes TCP o UDP.</p>
+                    <p>La diferencia entre el paquete TCP y UDP es que el TCP es el paquete de transmisión que está orientado a la conexión y el paquete UDP es un paquete que se usa sin conexión y pueden perderse paquetes por el camino.</p><br>
+                    <p>En esta capa también es donde se utilizan los puertos lógicos que usamos por ejemplo para navegar por internet por el modelo http ya que va al puerto 80 o con el protocolo seguro que va al puerto 443, en la cual se proporcionará una calidad suficiente para que cuando se transmita el paquete llegue correctamente entre el host de destino y el host de origen que hace la petición.</p>
+                </div>
+            </article>
+            <article class="cont-artic" data-aos="zoom-in-right">
+                <div class="artic">
+                    <h3><strong>Modelo de la capa de red</strong></h3>
+                    <p>La capa de red es la encargada de la identificación del enrutamiento entre dos o más redes que están conectadas. En este nivel lo que hará es que los datos puedan llegar de una máquina a otra. Siendo capaz de realizar los saltos y encaminamientos necesarios para poder recibir el mensaje.</p>
+                    <p>El protocolo IP es el más conocido y es el que se encarga de esto, hay más tipos de protocolos, tales como IPX, APPLETALK o ISO 9542.</p>
+                </div>
+            </article>
+            <article class="cont-artic" data-aos="zoom-in-right">
+                <div class="artic">
+                    <h3><strong>Modelo de enlace de datos</strong></h3>
+                    <p>La capa de enlace es la que se encarga del direccionamiento físico, el acceso al medio y la detección de los errores. Este es uno de los aspectos importantes a la hora de conectar dos máquinas. Ya que forma parte esencial para la creación de sus protocolos básicos también ya que está entre las capas física y de red.</p>
+                    <p>Esta capa lo que hace es construir los bits de información y controlar con otros elementos que se transmita de forma correcta.</p>
+                    <p>Esta capa lo que hace es construir los bits de información y controlar con otros elementos que se transmita de forma correcta.</p>
+                </div>
+            </article>
+            <article class="cont-artic" data-aos="zoom-in-right">
+                <div class="artic">
+                    <h3><strong>Modelo físico</strong></h3>
+                    <p>Esta capa es la más baja y se encarga tanto de la topología de la red, como de la conexión global del equipo hacia la red. Se encarga también de los elementos físicos y los procedimientos a nivel electrónico, lo cual hace que dé estabilidad a que el bit viaje de un punto a otro sin alteraciones. Este modelo garantiza también la conexión, aunque no garantiza la fiabilidad.</p>
+                    <p>Un ejemplo de estos medios de transmisión físicos son los cables de pares trenzados, o las ondas para la wifi. Tenemos algunas de las normas ISO que tendríamos que cumplir en esta capa, por ejemplo, el modelo ISO 2110.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <footer id="end">
+        <div class="part-footer">
+            <img src="../IMAGENES/LOGO KENGEL STUDIOS.png" alt="1">
+        </div>
+        <div class="part-footer">
+            <h4>About Me</h4>
+            <a href="#end">Angel Pineda Cala</a>
+        </div>
+        <div class="part-footer">
+            <h4>Escuela</h4>
+            <a href="https://www.cuautla.tecnm.mx/">TECNM/CUAUTLA</a>
+            <a href="#end">6TO SEMESTRE</a>
+            <a href="https://www.cuautla.tecnm.mx/sistemas">SISTEMAS COMPUTACIONALES</a>
+        </div>
+        <div class="part-footer">
+            <h4>Redes Sociales</h4>
+            <div class="social-media">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-whatsapp"></i>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/3fb9d5cad9.js" crossorigin="anonymous"></script>
+    <script src="../JS/main.js"></script>
+</body>
+</html>

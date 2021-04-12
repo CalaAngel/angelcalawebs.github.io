@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.cont{
+    width: 90%;
+    max-width: 1180px;
+    margin: auto;
+    overflow: hidden;
+}
+h1, h2, h3, h4{
+    color: #1d273d;
+    font-weight: 300;
+}
+
+/*NAVBAR AND HEADER*/
+h1{
+    font-size: 50px;
+    font-weight: 600;
+    color: seashell;
+}
+header{
+    background: rgb(34, 33, 33);  
+}
+header::before{
+    content: "";
+    display: block;
+    margin-bottom: 80px;
+}
+nav{
+    background: #000;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .2);
+    transition: ease-in-out 0.3s;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    transition: ease-in-out 0.5s;
+}
+.nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+nav .logo{
+    height: 80px;
+}
+nav .logo img{
+    height: 100%;
+    vertical-align: top;
+}
+.enlaces-header{
+    font-weight: 300;
+    transition: ease-in-out 0.5s;
+}
+.nav .enlaces-header a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+.nav .enlaces-header a:hover{
+    color: turquoise;
+    text-decoration: underline;
+}
+.barras{
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    z-index: 100;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    display: none;
+}
+.barras>i{
+    font-size: 25px;
+    line-height: 80px;
+}
+.contenido-header{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenido-header>img{
+    width: 550px;
+    animation: ease-in animation 1s;
+}
+@keyframes animation{
+    0%{
+        transform: scale(0);
+    }100%{
+        transform: scale(1);
+    }
+}
+.showcase{
+    margin: 0 0 0 30px;
+}
+.contenido-header p{
+    font-weight: 100;
+    margin-top: 14px;
+    color: #dfdfdf;
+}
+/*SECTIONS*/
+.Titulo{
+    font-size: 50px;
+    margin-top: 50px;
+}
+.webs{
+    background: linear-gradient(to right, rgba(180, 180, 180, 0.5), rgba(180, 180, 180, 0.5));
+}
+.cont-artic{
+    display: flex;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+.artic{
+    width: 29%;
+    background: #fff;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    padding: 45px 30px 60px 30px;
+}
+.artic:hover{
+    box-shadow: 0 4px 10px rgba(17, 29, 48, 0.26);
+    transition: 0.3s;
+}
+.artic>i{
+    font-size: 30px;
+    color: #fff;
+    background: #14dfce;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 50%;
+    box-shadow: 0 8px 32px rgba(41, 116, 38, 0.459);
+}
+.artic>h3{
+    font-size: 24px;
+    margin-top: 30px;
+}
+.artic>p{
+    font-weight: 100;
+    color: rgb(55, 68, 73);
+    margin-top: 15px;
+    padding-bottom: 20px;
+}
+.artic>a{
+    margin: 28px 0 0 0;
+    width: 130px;
+    display: inline-block;
+    background: rgb(50, 230, 185);
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0 8px 15px rgba(41, 116, 38, 0.459);
+    transition: all .3s ease-in-out;
+}
+.artic>a:hover{
+    color: rgb(229, 240, 236);
+    background: rgb(8, 218, 99);
+}
+/*FOOTER*/
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(235, 226, 226);
+    background: rgb(42, 42, 43);
+    margin-top: 50px;
+    padding: 50px 0;
+    overflow: hidden;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.part-footer{
+    width: 20%;
+    text-align: center;
+}
+.part-footer>h4{
+    color: seashell;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.part-footer>img{
+    width: 50%;
+}
+.part-footer>a{
+    display: block;
+    text-decoration: none;
+    color: rgb(184, 182, 180);
+    font-weight: 300;
+    transition: color .3s ease-in-out;
+    margin-bottom: 3px;
+}
+.part-footer>a:hover{
+    color: springgreen;
+}
+.social-media i{
+    font-size: 20px;
+    display: inline-block;
+    color: #5b6fa5;
+    border: 1px solid #5b6fa5;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    margin-top: 15px;
+    margin-right: 10px;
+    line-height: 32px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.social-media i:hover{
+    color: black;
+    background-color: chartreuse;
+    border-color: chartreuse;
+}
+/*RESPONSIVE DESIGN*/
+@media screen and (max-width: 900px){
+    .contenido-header{
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 720px;
+    }
+    .artic{
+        width: 45%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .Titulo{
+        font-size: 45px;
+    }
+    .contenido-header>img{
+        width: 400px;
+    }
+    .showcase{
+        margin: 0;
+    }
+    .part-footer{
+        width: 40%;
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width: 700px){
+    .nav{
+        padding: 0 10px;
+    }
+    
+    .enlaces-header{
+        position: fixed;
+        background: #C33764;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        clip-path: circle(0.0% at 100% 0);
+    }
+    .nav .menu2{
+        -webkit-clip-path: circle(150% at 100% 0);
+        clip-path: circle(150% at 100% 0);
+    }
+    .barras{
+        display: block;
+    }
+    .artic{
+        width: 75%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .Titulo{
+        font-size: 35px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .contenido-header{
+        height: 650px;
+    }
+    .contenido-header>img{
+        width: 300px;
+    }
+
+}
+@media screen and (max-width: 400px){
+    .Titulo{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .contenido-header>img{
+        width: 200px;
+    }
+    .artic{
+        width: 95%;
+    }
+    .part-footer{
+        width: 95%;
+        margin-bottom: 40px;
+    }
+    .artic h3{
+        font-size: 20px;
+        margin-top: 24px;
+    }
+    .artic>p{
+        font-size: 15px;
+    }
+}

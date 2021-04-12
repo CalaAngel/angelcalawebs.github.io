@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Comunicacion TCP/IP</title>
+    <link rel="stylesheet" href="../CSS/2.1.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel = "icon" href = "../IMAGENES/LOGO KENGEL STUDIOS.png" type = "image / icon type">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <section class="cont1 nav">
+                <div class="logo">
+                    <img src="../IMAGENES/LOGO KENGEL STUDIOS.png" alt="1">
+                </div>
+                <div class="enlaces-header">
+                    <a href="../index.html">INICIO</a>
+                    <a href="unidad2.html">REDES</a>
+                    <a href="../Página-próximamente/mantenimiento.html">DESARROLLO WEB</a>
+                    <a href="../Página-próximamente/mantenimiento.html">OTROS</a>
+                    <a href="#end">ACERCA DE</a>
+                </div>
+                <div class="barras">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </section>
+        </nav>
+    </header>
+    <section class="webs">
+        <div class="cont">
+            <h2 class="Titulo">2.4 PILAS DE PROTOCOLOS Y FLUJOS DE DATOS</h2>
+            <article class="cont-artic"data-aos="zoom-out-up">
+                <div class="artic">
+                    <h2><strong>Pila de Protocolos</strong></h2>
+                    <p>
+                        La <strong>pila de protocolos</strong> , (protocol stack en inglés) es una colección ordenada de protocolos organizados en capas que se ponen unas encima de otras y en donde cada protocolo implementa una abstracción encuadrada en la abstracción que proporciona la capa sobre la que está encuadrada. Los protocolos encuadrados en la capa inferior proporcionan sus servicios a los protocolos de la capa superior para que estos puedan realizar su propia funcionalidad.
+                    </p><br><br>
+                    <img src="../IMAGENES/pilas de protocolos.png" alt="pilas de protocolos">
+                    <p>
+                        El conjunto de protocolos TCP/IP permite la comunicación entre diferentes máquinas que ejecutan sistemas operativos completamente distintos.
+                    </p>
+                </div>
+            </article>
+            <article class="cont-artic"data-aos="zoom-out-up">
+                <div class="artic">
+                    <h2><strong>Protocolos Involucrados</strong></h2>
+                    <p>
+                        Las redes de comunicaciones están concebido entorno al concepto de capas de servicio. En esta estructura cada capa tiene como misión abstraer del HW de las capas superiores, y proporcionar servicios cada vez de más alto nivel. Esta estructura en capas se utiliza en las arquitecturas de comunicaciones más extendidas 
+                    </p>
+                </div>
+            </article>
+            <article class="cont-artic"data-aos="zoom-out-up">
+                <div class="artic">
+                    <h2><strong>Tipos de protocolos</strong></h2>
+                    <p>
+                        Dentro de las redes informáticas se conoce bajo el nombre de protocolo al lenguaje, que es un conjunto de reglas formales, que permiten la comunicación de distintas computadoras entre sí. Dentro de las distintas redes, como Internet, existen <strong>numerosos tipos de protocolos</strong> entre ellos:
+                    </p><br>
+                    <p>
+                        <strong>TPC/IP:</strong> este es definido como el conjunto de protocolos básicos para la 
+                        comunicación de redes y es por medio de él que se logra la transmisión de información entre computadoras pertenecientes a una red. Este protocolo es el que provee la base para los servicios más utilizados como por ejemplo transferencia de ficheros, correo electrónico y login remoto.
+                    </p><br>
+                    <p>
+                        <strong>TCP (Transmision Control Protocol)::</strong> este es un protocolo orientado a las 
+                        comunicaciones y ofrece una transmisión de datos confiable. El TCP es el encargado del ensamble de datos provenientes de las capas superiores hacia paquetes estándares, asegurándose que la transferencia de datos se realice correctamente.
+                    </p><br>
+                    <p>
+                        <strong>HTTP (Hypertext Transfer Protocol):</strong> este protocolo permite la recuperación de 
+                        información y realizar búsquedas indexadas que permiten saltos intertextuales de 
+                        manera eficiente. Por otro lado, permiten la transferencia de textos de los más 
+                        variados formatos, no sólo HTML. El protocolo HTTP fue desarrollado para resolver 
+                        los problemas surgidos del sistema hipermedial distribuidos en diversos puntos de 
+                        la red.
+                    </p><br>
+                    <p>
+                        <strong>SSH (Secure Shell):</strong> este fue desarrollado con el fin de mejorar la seguridad en las comunicaciones de internet. Para lograr esto el SSH elimina el envío de aquellas contraseñas que no son cifradas y codificando toda la información transferida.                                                        
+                    </p><br>
+                    <p>
+                        <strong>FTP (File Transfer Protocol):</strong> este es utilizado a la hora de realizar transferencias remotas de archivos. Lo que permite es enviar archivos digitales de un lugar local a otro que sea remoto o al revés. Generalmente, el lugar local es la PC mientras que el remoto el servidor.                            
+                    </p><br>
+                    <p>
+                        <strong>UDP (User Datagram Protocol):</strong> el protocolo de datagrama de usuario está destinado a aquellas comunicaciones que se realizan sin conexión y que no cuentan con mecanismos para transmitir datagramas. Esto se contrapone con el TCP que está destinado a comunicaciones con conexión. Este protocolo puede resultar poco confiable excepto si las aplicaciones utilizadas cuentan con verificación de confiabilidad.                         
+                    </p><br>
+                    <p>
+                        <strong>SNMP (Simple Network Management Protocol):</strong> este usa el Protocolo de Datagrama del Usuario (PDU) como mecanismo para el transporte. Por otro lado, utiliza distintos términos de TCP/IP como agentes y administradores en lugar de servidores y clientes. El administrador se comunica por medio de la red, mientras que el agente aporta la información sobre un determinado dispositivo.                           
+                    </p><br>
+                    <p>
+                        <strong>TFTP (Trivial File Transfer Protocol):</strong> este protocolo de transferencia se caracteriza por sencillez y falta de complicaciones. No cuenta con seguridad alguna y también utiliza el Protocolo de Datagrama del Usuario como mecanismo de transporte.                                
+                    </p><br>
+                    <p>
+                        <strong>SMTP (Simple Mail Transfer Protocol):</strong> este protocolo está compuesto por una serie de reglas que rige la transferencia y el formato de datos en los envíos de correos electrónicos. SMTP suele ser muy utilizado por clientes locales de correo que necesiten recibir mensajes de e-mail almacenados en un servidor cuya ubicación sea remota.                           
+                    </p><br>
+                    <p>
+                        <strong>ARP (Address Resolution Protocol):</strong> por medio de este protocolo se logran aquellas tareas que buscan asociar a un dispositivo IP, el cual está identificado con una dirección IP, con un dispositivo de red, que cuenta con una dirección de red física. ARP es muy usado para los dispositivos de redes locales Ethernet. Por otro lado, existe el protocolo RARP y este cumple la función opuesta a la recién mencionada.                             
+                    </p>
+                </div>
+            </article>
+            <article class="cont-artic" data-aos="zoom-out-up">
+                <div class="artic">
+                    <h2><strong>Flujos de datos</strong></h2>
+                    <p>
+                        Todos los datos fluyen a través del ordenador desde una entrada hacia una salida. Este flujo de datos se denomina también stream. Hay un flujo de entrada (input stream) que manda los datos desde el exterior (normalmente el teclado) del ordenador, y un flujo de salida (output stream) que dirige los datos hacia los dispositivos de salida (la pantalla o un archivo).
+
+                    </p>
+                    <img src="../IMAGENES/flujos de datos.png" alt="flujos de datos">
+                    <p>El proceso para leer o escribir datos consta de tres pasos</p>
+                    <ul>
+                        <li>Abrir el flujo de datos</li>
+                        <li>Mientras exista más información (leer o escribir ) los datos</li>
+                        <li>Cerrar el flujo de datos</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </section>
+    <footer id="end">
+        <div class="part-footer">
+            <img src="../IMAGENES/LOGO KENGEL STUDIOS.png" alt="1">
+        </div>
+        <div class="part-footer">
+            <h4>About Me</h4>
+            <a href="#end">Angel Pineda Cala</a>
+        </div>
+        <div class="part-footer">
+            <h4>Escuela</h4>
+            <a href="https://www.cuautla.tecnm.mx/">TECNM/CUAUTLA</a>
+            <a href="#end">6TO SEMESTRE</a>
+            <a href="https://www.cuautla.tecnm.mx/sistemas">SISTEMAS COMPUTACIONALES</a>
+        </div>
+        <div class="part-footer">
+            <h4>Redes Sociales</h4>
+            <div class="social-media">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-whatsapp"></i>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/3fb9d5cad9.js" crossorigin="anonymous"></script>
+    <script src="../JS/main.js"></script>
+</body>
+</html>
