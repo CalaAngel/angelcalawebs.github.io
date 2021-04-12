@@ -1,6 +1,4 @@
-AOS.init();
 let ubicPrin=window.pageYOffset;
-
 window.addEventListener("scroll", function(){
     let despAct= window.pageYOffset;
     if(ubicPrin>=despAct){
@@ -17,3 +15,4 @@ let temp=true;
 document.querySelectorAll(".barras")[0].addEventListener("click", function(){
     HeaderEnlac.classList.toggle("menu2")
 })
+AOS.init();
