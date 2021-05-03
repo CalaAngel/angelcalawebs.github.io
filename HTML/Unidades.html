@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de Comunicación OSI</title>
-    <link rel="stylesheet" href="../CSS/2.1.css">
+    <title>Redes de computadoras</title>
+    <link rel="stylesheet" href="../CSS/unidades.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link rel = "icon" href = "../IMAGENES/LOGO KENGEL STUDIOS.png" type = "image / icon type">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <section class="cont1 nav">
+            <section class="cont nav">
                 <div class="logo">
                     <img src="../IMAGENES/LOGO KENGEL STUDIOS.png" alt="1">
                 </div>
@@ -33,28 +32,21 @@
     </header>
     <section class="webs">
         <div class="cont">
-            <h2 class="Titulo">2.3.1 ESTÁNDARES IEEE 802 PARA REDES ALÁMBRICAS</h2>
-            <article class="cont-artic" data-aos="zoom-in-right">
+            <h2 class="Titulo">REDES DE COMPUTADORAS</h2>
+            <div class="cont-artic">
                 <div class="artic">
-                    <h2><strong>IEEE 802.3</strong></h2>
-                    <p>
-                        Este estándar para redes basadas en cable se originó a finales de los años setenta y es mundialmente conocido como el estándar Ethernet. Inicialmente definió redes a velocidad de 10Mbps (Megabits por segundo) sobre cable de tipo coaxial o también de par trenzado. La mayoría de las redes de área local operan bajo este estándar o uno derivado del original Ethernet, actualmente Fast Ethernet (100Mbps) o Gigabit Ethernet (1000Mbps). Actualmente IEEE está trabajando (y casi terminando) el nuevo estándar de 10Gbps (Gigabits por segundo).
-                    </p><br><br>
-                    <img src="../IMAGENES/beispiel-ethernet.png" alt="estandares inalambricos">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>UNIDAD 2: NORMAS Y ESTÁNDARES DE REDES DE DATOS</h3>
+                    <p>Referirnos a la comunicación de datos, es un proceso común y cotidiano, que en ocasiones, hasta para aquellas personas distanciadas del mundo de la computación caen en la necesidad de manejar y transmitir información.</p>
+                    <a href="unidad2.html">Leer mas --></a>
                 </div>
-            </article>
-            <article class="cont-artic" data-aos="zoom-in-right">
                 <div class="artic">
-                    <h2><strong>Estándar IEEE 802.3 (Ethernet)</strong></h2>
-                    <p>
-                        La norma IEEE 802.3 define un modelo de red de área local utilizando el protocolo de acceso al medio CSMA/CD con persistencia de 1, es decir, las estaciones están permanentemente a la escucha del canal y cuando lo encuentran libre de señal efectúan sus transmisiones inmediatamente. Esto puede llevar a una colisión que hará que las estaciones suspendan sus transmisiones, esperen un tiempo aleatorio y vuelvan a intentarlo.
-                    </p><br>
-                    <p>
-                        En el nivel físico, las redes IEEE 802.3 utilizan codificación Manchester diferencial, que representa cada bit, no como un estado alto o bajo, sino como la transición bajo/alto o alto/bajo, dependiendo del valor del bit. Esto tiene la ventaja de que sea cual sea la secuencia binaria a transmitir, las corrientes eléctricas son iguales en un sentido o en el otro, es decir, el valor medio de la señal en cada bit es cero (físicamente, se dice que la componente de continua se anula), lo que tiene ventajas eléctricas.
-                    </p>
+                    <i class="fas fa-server"></i>
+                    <h3>UNIDAD 3: DISPOSITIVOS DE RED</h3>
+                    <p>Son todos aquellos que se conectan de forma directa a un segmento de red. Estos dispositivos están clasificados en dos grandes grupos el primero son los dispositivos de usuario final. Por otro lado tenemos los dispositivos de red, estos dispositivos son los que conectan los dispositivos de usuario final posibilitando la comunicación entre ellos</p>
+                    <a href="unidad3.html">Leer mas --></a>
                 </div>
-            </article>
-            
+            </div>
         </div>
     </section>
     <footer id="end">
@@ -81,9 +73,7 @@
             </div>
         </div>
     </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/3fb9d5cad9.js" crossorigin="anonymous"></script>
-    <script>AOS.init();</script>
     <script src="../JS/main.js"></script>
 </body>
 </html>

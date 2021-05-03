@@ -5,24 +5,22 @@
     font-family: 'Roboto', sans-serif;
 }
 .cont{
-    width: 60%;
-    max-width: 1180px;
-    margin: 0 auto;
-    overflow: hidden;
-    background: rgb(255, 255, 255);
-}
-.cont1{
     width: 90%;
     max-width: 1180px;
     margin: 0 auto;
     overflow: hidden;
 }
-h2, h3, h4{
+h1, h2, h3, h4{
     color: #1d273d;
     font-weight: 300;
 }
 
 /*NAVBAR AND HEADER*/
+h1{
+    font-size: 50px;
+    font-weight: 600;
+    color: seashell;
+}
 header::before{
     content: "";
     display: block;
@@ -82,49 +80,76 @@ nav .logo img{
     font-size: 25px;
     line-height: 80px;
 }
+
 /*SECTIONS*/
-.webs{
-    background: rgb(250, 250, 250);
-}
 .Titulo{
     display: flex;
     justify-content: center;
-    font-size: 45px;
+    font-size: 50px;
     margin-top: 50px;
 }
+.webs{
+    background: linear-gradient(to right, rgba(180, 180, 180, 0.5), rgba(180, 180, 180, 0.5));
+}
 .cont-artic{
-    display: block;
+    display: flex;
+    margin-top: 40px;
     flex-wrap: wrap;
-
+    justify-content: space-around;
 }
 .artic{
-    background: rgb(255, 255, 255);
-    text-align: justify;
-    width: 95%;
+    width: 40%;
+    background: #fff;
     margin-bottom: 30px;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 45px 30px 60px 30px;
-    font-weight: 400;
-    align-items: center;
     text-align: justify;
 }
-
-.artic>h2{
+.artic:hover{
+    box-shadow: 0 4px 10px rgba(17, 29, 48, 0.26);
+    transition: 0.3s;
+}
+.artic>i{
     font-size: 30px;
-    margin-bottom: 15px;
+    color: #fff;
+    background: #14dfce;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 50%;
+    box-shadow: 0 8px 32px rgba(41, 116, 38, 0.459);
 }
 .artic>h3{
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-top: 30px;
 }
-.cont-artic .artic>img{
-    width: 100%;
+.artic>p{
+    font-weight: 100;
+    color: rgb(55, 68, 73);
+    margin-top: 15px;
+    padding-bottom: 20px;
 }
-p{
-    margin: 10px;
+.artic>a{
+    margin: 28px 0 0 0;
+    width: 130px;
+    display: inline-block;
+    background: rgb(50, 230, 185);
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0 8px 15px rgba(41, 116, 38, 0.459);
+    transition: all .3s ease-in-out;
 }
-ul{
-    margin-left: 40px;
+.artic>a:hover{
+    color: rgb(229, 240, 236);
+    background: rgb(8, 218, 99);
 }
 /*FOOTER*/
 footer{
@@ -183,12 +208,15 @@ footer{
     background-color: chartreuse;
     border-color: chartreuse;
 }
-@media screen and (max-width:800px) {
-    .cont{
-        width: 75%;
+/*RESPONSIVE DESIGN*/
+@media screen and (max-width: 900px){
+    .artic{
+        width: 45%;
     }
+}
+@media screen and (max-width: 800px) {
     .Titulo{
-        font-size: 35px;
+        font-size: 45px;
     }
     .part-footer{
         width: 40%;
@@ -221,35 +249,32 @@ footer{
     .barras{
         display: block;
     }
-}
-@media screen and (max-width:600px) {
-    .cont{
-        width: 90%;
+    .artic{
+        width: 75%;
     }
+}
+@media screen and (max-width: 600px) {
     .Titulo{
-        font-size: 30px;
+        font-size: 35px;
     }
+
 }
-@media screen and (max-width:400px) {
-    .cont{
-        width: 99%;
-        padding: 15px 10px 20px 10px;
-    }
+@media screen and (max-width: 400px){
     .Titulo{
         font-size: 20px;
+    }
+    .artic{
+        width: 95%;
     }
     .part-footer{
         width: 95%;
         margin-bottom: 40px;
     }
     .artic h3{
-        font-size: 17px;
+        font-size: 20px;
         margin-top: 24px;
     }
-    .artic h2{
-        font-size: 20px;
-    }
     .artic>p{
-        font-size: 14px;
+        font-size: 15px;
     }
 }

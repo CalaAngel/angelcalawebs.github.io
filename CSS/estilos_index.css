@@ -22,7 +22,7 @@ h1{
     color: seashell;
 }
 header{
-    background: rgb(34, 33, 33);  
+    background: rgb(10, 10, 24);  
 }
 header::before{
     content: "";
@@ -111,6 +111,8 @@ nav .logo img{
 }
 /*SECTIONS*/
 .Titulo{
+    display: flex;
+    justify-content: center;
     font-size: 50px;
     margin-top: 50px;
 }
@@ -123,7 +125,6 @@ nav .logo img{
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 40px;
-    text-align: justify;
 }
 .artic{
     width: 29%;
@@ -131,6 +132,7 @@ nav .logo img{
     margin-bottom: 40px;
     border-radius: 10px;
     padding: 45px 30px 60px 30px;
+    text-align: justify;
 }
 .artic:hover{
     box-shadow: 0 4px 10px rgba(17, 29, 48, 0.26);

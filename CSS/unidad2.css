@@ -83,6 +83,8 @@ nav .logo img{
 
 /*SECTIONS*/
 .Titulo{
+    display: flex;
+    justify-content: center;
     font-size: 50px;
     margin-top: 50px;
 }
@@ -94,7 +96,6 @@ nav .logo img{
     margin-top: 40px;
     flex-wrap: wrap;
     justify-content: space-around;
-    text-align: justify;
 }
 .artic{
     width: 29%;
@@ -102,6 +103,7 @@ nav .logo img{
     margin-bottom: 30px;
     border-radius: 10px;
     padding: 45px 30px 60px 30px;
+    text-align: justify;
 }
 .artic:hover{
     box-shadow: 0 4px 10px rgba(17, 29, 48, 0.26);

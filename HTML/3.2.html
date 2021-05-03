@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de Comunicación OSI</title>
+    <title>DISPOSITIVOS DE CAPA DE ENLACE</title>
     <link rel="stylesheet" href="../CSS/2.1.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
@@ -33,28 +33,37 @@
     </header>
     <section class="webs">
         <div class="cont">
-            <h2 class="Titulo">2.3.1 ESTÁNDARES IEEE 802 PARA REDES ALÁMBRICAS</h2>
+            <h2 class="Titulo">3.2 DISPOSITIVOS DE CAPA ENLACE</h2>
             <article class="cont-artic" data-aos="zoom-in-right">
                 <div class="artic">
-                    <h2><strong>IEEE 802.3</strong></h2>
+                    <h3><strong>Bridge (Puente de Red)</strong></h3>
                     <p>
-                        Este estándar para redes basadas en cable se originó a finales de los años setenta y es mundialmente conocido como el estándar Ethernet. Inicialmente definió redes a velocidad de 10Mbps (Megabits por segundo) sobre cable de tipo coaxial o también de par trenzado. La mayoría de las redes de área local operan bajo este estándar o uno derivado del original Ethernet, actualmente Fast Ethernet (100Mbps) o Gigabit Ethernet (1000Mbps). Actualmente IEEE está trabajando (y casi terminando) el nuevo estándar de 10Gbps (Gigabits por segundo).
+                        Los puentes son utilizados para interconectar segmentos, un puente se encarga de repetir paquetes. De hecho, un puente es un computador con dos interfaces Ethernet. El puente opera sobre ambas interfaces, capturando una de las tarjetas todos los paquetes válidos y entregándolos a la siguiente.
+                    </p>
+                    <p>
+                        Un bridge conecta segmentos de red formando una sola subred. Funciona a través de una tabla de direcciones MAC detectadas en cada segmento al que está conectado. Cuando detecta que un nodo de uno de los segmentos está intentando transmitir datos a un nodo del otro, el bridge copia la trama para la otra subred, teniendo la capacidad de desechar la trama en caso de no tener dicha subred como destino. Para conocer por dónde enviar cada trama que le llega incluye un mecanismo de autoaprendizaje, por lo que no necesitan configuración manual.
                     </p><br><br>
-                    <img src="../IMAGENES/beispiel-ethernet.png" alt="estandares inalambricos">
-                </div>
-            </article>
-            <article class="cont-artic" data-aos="zoom-in-right">
-                <div class="artic">
-                    <h2><strong>Estándar IEEE 802.3 (Ethernet)</strong></h2>
+                    <img src="../IMAGENES/bridge.jpg" alt="Bridge">
+                    <br><br><p>
+                        <strong>¿En qué consiste el aprendizaje de los puentes de red?</strong><br>
+                        Los puentes de red usan una tabla de reenvío para enviar tramas a lo largo de los segmentos de la red. Dicha tabla incluye tres campos: dirección MAC, interfaz a la que está conectada y la hora a la que llegó la trama (a partir de este campo y la hora actual se puede saber si la entrada está vigente en el tiempo). El bridge utilizará esta tabla para determinar qué hacer con las tramas que le llegan.
+                    </p>
+                    
                     <p>
-                        La norma IEEE 802.3 define un modelo de red de área local utilizando el protocolo de acceso al medio CSMA/CD con persistencia de 1, es decir, las estaciones están permanentemente a la escucha del canal y cuando lo encuentran libre de señal efectúan sus transmisiones inmediatamente. Esto puede llevar a una colisión que hará que las estaciones suspendan sus transmisiones, esperen un tiempo aleatorio y vuelvan a intentarlo.
-                    </p><br>
-                    <p>
-                        En el nivel físico, las redes IEEE 802.3 utilizan codificación Manchester diferencial, que representa cada bit, no como un estado alto o bajo, sino como la transición bajo/alto o alto/bajo, dependiendo del valor del bit. Esto tiene la ventaja de que sea cual sea la secuencia binaria a transmitir, las corrientes eléctricas son iguales en un sentido o en el otro, es decir, el valor medio de la señal en cada bit es cero (físicamente, se dice que la componente de continua se anula), lo que tiene ventajas eléctricas.
+                        <strong>Características y consideraciones sobre el Puente de red:</strong><br>
+                        Los puentes son superiores a los repetidores porque estos no retransmiten errores, ruido o paquetes deformados. Los puentes pueden hacer decisiones inteligentes. Un puente puede lograr aumentar la longitud de una red; de modo que unos usuarios pueden alcanzar a otros como si todos estuvieran situados en el mismo segmento de red. Un puente es como un repetidor, pero añade una función de “portero”.
                     </p>
                 </div>
             </article>
-            
+            <article class="cont-artic" data-aos="zoom-in-right">
+                <div class="artic">
+                    <h3><strong>Switch (Conmutadores).</strong></h3>
+                    <p>
+                        Externamente no se diferencian mucho de los Hubs pero tienen un conjunto de funcionalidades que los hacen mucho más interesantes. Se encuentran en el mismo nivel del modelo OSI que los puentes y las tarjetas de red. No se conforman simplemente con leer los bits, sino que son capaces también de extraer información usando las tramas, y entre otras cosas, obtener la dirección MAC o dirección física de cada dispositivo que está conectado.
+                    </p><br><br>
+                    <img src="../IMAGENES/switch.jpg" alt="SWITCH">
+                </div>
+            </article>
         </div>
     </section>
     <footer id="end">
